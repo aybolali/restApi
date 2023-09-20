@@ -23,6 +23,11 @@ test {
     finalizedBy jacocoTestReport
 }
 
+compileJava {
+    options.sourceCompatibility = '17'
+    options.targetCompatibility = '17'
+}
+
 repositories {
 	mavenCentral()
 	maven { url 'https://repo.spring.io/milestone' }
