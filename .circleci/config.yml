@@ -35,15 +35,13 @@ jobs:
 
       - run: gradle dependencies
 
-      # run tests! and gen code coverage
-      - run: ./gradlew clean test jacocoTestReport
-
       - save_cache:
           paths:
             - ~/.m2
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
-    
+    # run tests! and gen code coverage
+      - run: ./gradlew clean test jacocoTestReport
 
       - run:
           name: Save test results
