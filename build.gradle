@@ -24,8 +24,10 @@ test {
 }
 
 compileJava {
-    options.sourceCompatibility = '17'
-    options.targetCompatibility = '17'
+	options {
+		options.sourceCompatibility = '17'
+		options.targetCompatibility = '17'   
+	}
 }
 
 repositories {
