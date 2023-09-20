@@ -3,6 +3,8 @@
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
 version: 2
+orbs:
+  codecov/codecov@3.2.4
 jobs:
   build:
     docker:
@@ -57,5 +59,4 @@ jobs:
           name: Send to CodeCov
           command: bash <(curl -s https://codecov.io/bash)
 
-orbs:
-  codecov/codecov@3.2.4
+
