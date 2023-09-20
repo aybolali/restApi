@@ -47,6 +47,5 @@ tasks.named('test') {
 jacocoTestReport {
     reports {
         xml.isEnabled true
-        html.enabled false
     }
 }
