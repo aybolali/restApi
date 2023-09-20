@@ -21,6 +21,8 @@ jobs:
 
     steps:
       - checkout
+      - codecov/upload
+      
 
       # Download and cache dependencies
       - restore_cache:
