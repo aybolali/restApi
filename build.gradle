@@ -46,6 +46,6 @@ tasks.named('test') {
 //export test coverage
 jacocoTestReport {
     reports {
-        xml.isEnabled true
+        xml.isEnabled = true
     }
 }
