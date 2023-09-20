@@ -32,3 +32,10 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+//export test coverage
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
+    }
+}
