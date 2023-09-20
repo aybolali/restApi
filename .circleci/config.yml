@@ -21,7 +21,11 @@ jobs:
 
     steps:
       - checkout
-      
+
+      - run:
+          name: Grant Execute Permissions to gradlew
+          command: |
+            chmod +x ./gradlew
 
       # Download and cache dependencies
       - restore_cache:
